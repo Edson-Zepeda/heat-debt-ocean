@@ -10,6 +10,7 @@ Use a format you understand and keep it consistent. Add any additional sources, 
 - NOAA Climate.gov. "Climate Change: Ocean Heat Content." https://www.climate.gov/news-features/understanding-climate/climate-change-ocean-heat-content
 - NOAA Ocean Service. "How much oxygen comes from the ocean?" https://oceanservice.noaa.gov/facts/ocean-oxygen.html
 - NASA Science. "The Ocean and Climate Change." https://science.nasa.gov/earth/explore/the-ocean-and-climate-change/
+- INEGI. "Conociendo Colima." Instituto Nacional de Estadística y Geografía. https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/estudios/conociendo/702825212957.pdf
 
 This expanded version uses code-native visuals only. If you add photos, drawings, audio, video, public-domain material, tutorials, or additional facts, add them here before submitting.
 
