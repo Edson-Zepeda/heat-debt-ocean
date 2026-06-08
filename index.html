@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Heat Is a Debt the Ocean Has Been Paying</title>
+    <meta
+      name="description"
+      content="A code-native interactive scrollytelling work about inland heat, ocean protection, ecological limits, and reciprocity."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#reciprocity">Skip to reciprocity</a>
+
+    <canvas id="worldCanvas" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="heat-vignette" aria-hidden="true"></div>
+
+    <header class="control-bar" aria-label="Experience controls">
+      <button id="motionToggle" type="button" aria-pressed="false">pause motion</button>
+    </header>
+
+    <aside class="chapter-rail" aria-label="Story chapters">
+      <span class="rail-line" aria-hidden="true"></span>
+      <ol>
+        <li><a href="#prologue" aria-label="Go to chapter 1"><span></span></a></li>
+        <li><a href="#unseen" aria-label="Go to chapter 2"><span></span></a></li>
+        <li><a href="#breath" aria-label="Go to chapter 3"><span></span></a></li>
+        <li><a href="#coral" aria-label="Go to chapter 4"><span></span></a></li>
+        <li><a href="#shield" aria-label="Go to chapter 5"><span></span></a></li>
+        <li><a href="#ledger" aria-label="Go to chapter 6"><span></span></a></li>
+        <li><a href="#silence" aria-label="Go to chapter 7"><span></span></a></li>
+        <li><a href="#future" aria-label="Go to chapter 8"><span></span></a></li>
+        <li><a href="#reciprocity" aria-label="Go to chapter 9"><span></span></a></li>
+      </ol>
+    </aside>
+
+    <aside class="status-panel" aria-label="Changing climate signals">
+      <div class="status-heading">
+        <span id="currentChapter">01 / inland heat</span>
+        <b id="depthValue">0 m</b>
+      </div>
+      <div class="meter meter-heat">
+        <div class="meter-label"><span>heat debt</span><b id="heatValue">0</b></div>
+        <i><span id="heatTrack"></span></i>
+      </div>
+      <div class="meter meter-buffer">
+        <div class="meter-label"><span>ocean buffer</span><b id="bufferValue">100</b></div>
+        <i><span id="bufferTrack"></span></i>
+      </div>
+      <div class="meter meter-breath">
+        <div class="meter-label"><span>breath</span><b id="breathValue">100</b></div>
+        <i><span id="breathTrack"></span></i>
+      </div>
+      <div class="meter meter-silence">
+        <div class="meter-label"><span>silence</span><b id="silenceValue">0</b></div>
+        <i><span id="silenceTrack"></span></i>
+      </div>
+    </aside>
+
+    <main id="experience">
+      <section class="chapter align-left hero" id="prologue" data-chapter="0">
+        <div class="chapter-card">
+          <p class="chapter-kicker">01 / prologue</p>
+          <h1>Heat Is a Debt the Ocean Has Been Paying</h1>
+          <p>
+            I thought the ocean was far away until the heat entered my room.
+          </p>
+          <p class="interaction-cue">
+            Scroll slowly. Move your pointer through the water. At the end,
+            return water to the ocean.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter align-right" id="unseen" data-chapter="1">
+        <div class="chapter-card">
+          <p class="chapter-kicker">02 / the unseen ocean</p>
+          <h2>The floor gives way.</h2>
+          <p>
+            Distance was only an illusion. Every breath, cloud, meal, and hot
+            afternoon was already connected to water I could not see.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter align-left" id="breath" data-chapter="2">
+        <div class="chapter-card">
+          <p class="chapter-kicker">03 / breath layer</p>
+          <h2>Before I speak, something microscopic has already given me air.</h2>
+          <p>
+            Tiny drifting life turns light into oxygen. The ocean sustains even
+            the people who have never touched it that day.
+          </p>
+          <p class="science-note">
+            Marine life produces a major share of the oxygen we breathe.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter align-right" id="coral" data-chapter="3">
+        <div class="chapter-card">
+          <p class="chapter-kicker">04 / coral city</p>
+          <h2>A city I never built keeps lending me color.</h2>
+          <p>
+            Fish cross the reef like messages. The ocean is not a background;
+            it is a living architecture of shelter, food, memory, and motion.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter align-left" id="shield" data-chapter="4">
+        <div class="chapter-card">
+          <p class="chapter-kicker">05 / mangrove shield</p>
+          <h2>Roots hold the coast the way hands hold a door in a storm.</h2>
+          <p>
+            Protection is not only a wall. Sometimes it is a forest standing in
+            water, slowing waves before they become disaster.
+          </p>
+          <p class="science-note">
+            Reefs and mangroves protect coastlines, but they weaken under
+            extreme heat.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter align-right" id="ledger" data-chapter="5">
+        <div class="chapter-card">
+          <p class="chapter-kicker">06 / heat ledger</p>
+          <h2>Every absorbed degree is written somewhere.</h2>
+          <p>
+            The ocean has buffered our emissions and heat, but a buffer is not
+            an eraser. The debt keeps moving through current, color, and life.
+          </p>
+          <p class="science-note">
+            The ocean absorbs most of the excess heat trapped by climate change.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter align-left" id="silence" data-chapter="6">
+        <div class="chapter-card">
+          <p class="chapter-kicker">07 / bleaching and silence</p>
+          <h2>Protection is not permission.</h2>
+          <p>
+            When the reef turns pale, the story stops sounding like abundance.
+            What protected us begins asking to be protected back.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter align-right danger" id="future" data-chapter="7">
+        <div class="chapter-card">
+          <p class="chapter-kicker">08 / no-water future</p>
+          <h2>When the water leaves, heat is no longer weather. It is architecture.</h2>
+          <p>
+            A dry city is not separate from a wounded ocean. The crisis travels
+            inland until the room, the street, and the sky all remember it.
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter align-center final" id="reciprocity" data-chapter="8">
+        <div class="chapter-card final-card">
+          <p class="chapter-kicker">09 / reciprocity</p>
+          <h2>Return something.</h2>
+          <p>
+            The ocean has been paying a debt it did not create. The page will
+            not breathe again until the gesture changes direction.
+          </p>
+
+          <div class="reciprocity-widget" aria-label="Reciprocity gesture">
+            <div class="return-field" id="returnField" aria-hidden="true">
+              <span>give back</span>
+            </div>
+            <button
+              class="drop"
+              id="drop"
+              type="button"
+              aria-describedby="dropHint"
+              aria-label="Return water to the ocean"
+            >
+              <span></span>
+            </button>
+            <p class="drop-hint" id="dropHint">Drag the drop into the basin, or press Enter.</p>
+          </div>
+          <p class="result-message" id="resultMessage" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="sources" id="sources" aria-labelledby="sourcesTitle">
+        <div class="sources-inner">
+          <p class="chapter-kicker">works cited</p>
+          <h2 id="sourcesTitle">Sources</h2>
+          <ul>
+            <li>
+              Bow Seat Ocean Awareness Contest:
+              <a href="https://bowseat.org/programs/ocean-awareness-contest/how-to-enter/">How to Enter</a>
+            </li>
+            <li>
+              Bow Seat 2026 Resource Studio:
+              <a href="https://bowseat.org/resources/2026-contest-resources/">Your Story, Our Ocean</a>
+            </li>
+            <li>
+              NOAA Climate.gov:
+              <a href="https://www.climate.gov/news-features/understanding-climate/climate-change-ocean-heat-content">Ocean heat content</a>
+            </li>
+            <li>
+              NOAA Ocean Service:
+              <a href="https://oceanservice.noaa.gov/facts/ocean-oxygen.html">Ocean oxygen</a>
+            </li>
+            <li>
+              NASA Science:
+              <a href="https://science.nasa.gov/earth/explore/the-ocean-and-climate-change/">The ocean and climate change</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
